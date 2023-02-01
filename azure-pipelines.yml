@@ -5,21 +5,22 @@
 
 trigger:
 - main
-
-pool:
-  vmImage: "ubuntu-latest"
   
 strategy:
   matrix:
     jdk11:
+      imageName: "ubuntu-latest"
       jdkVersion: "1.11"
     jdk18:
+      imageName: "windows-latest"
       jdkVersion: "1.8"
   maxParallel: 2
-  
+
+pool:
+  vmImage: $(imageName)  
   
 steps:
-- task: Maven@3
+- task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'
     mavenOptions: '-Xmx3072m'

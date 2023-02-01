@@ -1,7 +1,5 @@
 [![Build Status](https://dev.azure.com/jmcgruder/001/_apis/build/status/krystallfabrik.pipelines-java?branchName=main)](https://dev.azure.com/jmcgruder/001/_build/latest?definitionId=4&branchName=main)
 
-TEST 
-
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
